@@ -1,0 +1,86 @@
+#mainContainer #upperContainer #userData {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 400;
+    height: 500;
+    background-color: #171717;
+    padding: 10px;
+    z-index: 5;
+}
+#mainContainer #upperContainer #userData #container .inputClass {
+    margin-top: 5px;
+}
+
+#mainContainer #upperContainer #userData #container .upperText {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+    font-weight: lighter;
+}
+
+#mainContainer #upperContainer #userData #container .textInput {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #171717;
+    font-weight: lighter;
+}
+
+#mainContainer #upperContainer #userData #container .radioText {
+    width: 40px;
+}
+
+
+#mainContainer #upperContainer #userData #container #dayInput {
+    color: #171717;
+    width: 30px;
+    font-weight: normal;
+}
+
+#mainContainer #upperContainer #userData #container #monthInput {
+    color: #171717;
+    width: 70px;
+    font-weight: normal;
+}
+
+#mainContainer #upperContainer #userData #container #yearInput {
+    color: #171717;
+    width: 43px;
+    font-weight: normal;
+}
+
+#mainContainer #upperContainer #userData #container #inputButtons {
+    width: inherit;
+    height: 30px;
+    background-color: inherit;
+    text-align: center;
+    line-height: 30px;
+}
+
+#mainContainer #upperContainer #userData #container .inputButton {
+    user-select: none;
+    border: solid 1px white;
+    border-radius: 2px;
+    background-color: #171717;
+    color: white;
+    width: 68px;
+    height: 25px;
+}
+
+#mainContainer #upperContainer #userData #container .inputButton:hover {
+    box-shadow: 0px 0px 10px #00d0e1;
+    cursor: pointer;
+}
+
+#mainContainer #upperContainer #userData #container .inputButton:active {
+    cursor: default;
+    border: solid 1px #202020;
+}

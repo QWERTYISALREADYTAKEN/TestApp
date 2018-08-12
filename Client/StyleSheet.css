@@ -1,0 +1,678 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: Calibri, Arial, sans-serif;
+    color: #171717;
+    overflow-x: hidden;
+}
+
+/* Upper Container */
+#mainContainer #upperContainer {
+    width: 100%;
+    height: 300px;
+    background: url(Pics/Images/fantastic-blurry-wallpaper-35115-35919-hd-wallpapers.jpg);
+    background-size: cover;
+}
+
+#mainContainer #upperContainer #authenticatePart {
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 30px;
+    right: 0px;
+    color: white;
+    text-align: right;
+    line-height: 100%;
+}
+
+#mainContainer #upperContainer #authenticatePart .upperText{
+    position: relative;
+    left: -15px;
+    display: inline-block;
+    width: 60px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+    font-weight: lighter;
+}
+
+#mainContainer #upperContainer #authenticatePart .upperText:hover {
+    cursor: pointer;
+    user-select: none;
+    text-decoration: underline;
+}
+
+#mainContainer #upperContainer #authenticatePart .upperText:active {
+    cursor: default;
+    user-select: none;
+    color: dimgrey; 
+}
+
+#mainContainer #upperContainer #authenticatePart .authForm {
+    display: block;
+    width: 250px;
+    height: 69px;
+    background: none;
+    position: absolute;
+    right: 0;
+}
+
+#mainContainer #upperContainer #authenticatePart .authForm .authInput {
+    display: inline-block;
+    width: 200px;
+    height: 14px;
+    margin: 5px 25px 0px;
+}
+
+#mainContainer #upperContainer #authenticatePart .authForm .authButton {
+    width: 40px;
+    height: 20px;
+    font-size: 14px;
+    display: inline-block;
+    margin: 5px 25px 0px 0px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    font-weight: lighter;
+}
+
+#mainContainer #upperContainer #authenticatePart .authForm #authforgotPass {
+    width: 70px;
+    margin: 5px 0px 0px 0px;
+}
+
+#mainContainer #upperContainer #authenticatePart .authForm #authSubmit {
+    margin: 5px 5px 0px 0px;
+}
+
+#mainContainer #upperContainer #authenticatePart .authForm .authButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#mainContainer #upperContainer #userData {
+    display: none;
+    position: absolute;
+    right: 0;
+    transform: translate(325px);
+    width: 400;
+    height: 500;
+    background-color: #171717;
+    padding: 10px;
+    z-index: 5;
+}
+#mainContainer #upperContainer #userData #userDataContainer .inputClass {
+    margin-top: 10px;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer #radios2 {
+    margin-bottom: 10px;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer .upperText {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+    font-weight: lighter;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer .textInput {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #171717;
+    font-weight: lighter;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer #sexInput {
+    width: 155px;
+    height: 20px;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer #setAvIncomeInput {
+    width: 155px;
+    height: 20px;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer .radioText {
+    width: 40px;
+}
+
+
+#mainContainer #upperContainer #userData #userDataContainer #dayInput {
+    color: #171717;
+    width: 30px;
+    font-weight: normal;
+    margin-right: 2px;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer #monthInput {
+    color: #171717;
+    width: 70px;
+    font-weight: normal;
+    margin-right: 2px;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer #yearInput {
+    color: #171717;
+    width: 45px;
+    height: 16px;
+    font-weight: normal;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer #inputButtons {
+    position: absolute;
+    right: 0px;
+    margin-top: 5px;
+    width: 325px;
+    height: 40px;
+    background-color: #963749;
+    text-align: center;
+    line-height: 40px;
+    z-index: 7;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer .inputButton {
+    margin: 0px 2px;
+    user-select: none;
+    border: none;
+    background-color: inherit;
+    color: white;
+    width: 68px;
+    height: 25px;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer .inputButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer .inputButton:active {
+    cursor: default;
+    border: solid 1px #202020;
+}
+
+#mainContainer #upperContainer #userData #userDataContainer .responseStatus {
+    width: 325px;
+    height: 40px;
+    background-color: #171717;
+    position: absolute;
+    right: 0px;
+    transform: translate(0px, 45px);
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    z-index: 5;
+}
+
+#mainContainer #upperContainer #firstPart {
+    width: 700px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 25px 0px 0px;
+}
+
+#mainContainer #upperContainer #firstPart #availableText {
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#mainContainer #upperContainer #firstPart #availableAmount {
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 50px;
+    padding: 5px 0px;
+}
+
+#mainContainer #upperContainer #secondPart {
+    width: 500px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 10px 0px 25px;
+}
+
+#mainContainer #upperContainer #secondPart #upperIncome {
+    width: 500px;
+    height: 50px;
+    background: #358c5a;
+    margin: 5px 0px 10px 0px;
+}
+
+#mainContainer #upperContainer #secondPart .upperText {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0px 20px;
+    font-size: 20px;
+    color: #171717;
+}
+
+#mainContainer #upperContainer #secondPart .numberValue{
+    display: inline-block;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+    line-height: 50px;
+    text-align: right;
+}
+
+#mainContainer #upperContainer #secondPart #upperExpenses {
+    width: 500px;
+    height: 50px;
+    background: #963749;
+    margin: 10px 0px 5px 0px;
+}
+
+#mainContainer #upperContainer #secondPart #upperExpenses #expensesUpperAmount {
+    left: 86px;
+}
+
+#mainContainer #upperContainer #secondPart #upperExpenses #upperPercentage {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background: #bb4667;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    border-radius: 2px;
+}
+
+/* Styling MiddleContainer */
+
+#mainContainer #middleContainer {
+    width: 100%;
+    height: 60px;
+    background: #eaeaea;
+}
+
+#mainContainer #middleContainer #contain {
+    width: 700px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+/* Two Colors For InputTypes */
+
+#mainContainer #middleContainer #contain .inputType {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0px 6px 0px 6px;
+    border: solid 1px #a7a7a7;
+    padding: 0px 5px;
+}
+
+#mainContainer #middleContainer #contain .inputType:focus {
+    outline: none;
+}
+
+#mainContainer #middleContainer #contain .inputTypeGreen:focus {
+    outline: solid 2px #6eba8f;
+}
+
+#mainContainer #middleContainer #contain .inputTypeRed:focus {
+    outline: solid 2px #bb4667;
+}
+
+/* End Of CHange Classes */
+
+#mainContainer #middleContainer #contain #plusMinusChoice {
+    width: 40px;
+    padding: 0px 2px;
+}
+
+#mainContainer #middleContainer #contain #description {
+    width: 460px;
+}
+
+#mainContainer #middleContainer #contain #numberValue {
+    width: 80px;
+}
+
+#mainContainer #middleContainer #contain #submitIcon {
+    width: 30px;
+    position: relative;
+    top: 15px;
+    padding: 0px 5px;
+}
+
+#mainContainer #middleContainer #contain #submitIcon:hover {
+    cursor: pointer;
+    width: 28px;
+    padding: 1px 5px;
+}
+
+#mainContainer #middleContainer #contain #submitIcon:active {
+    cursor: default;
+    padding: 0px 4px;
+    border: solid 1px #a7a7a7;
+    border-radius: 2px;
+}
+
+/* Styling Date Tab */
+#mainContainer #dateTab {
+    position: absolute;
+    background: #eaeaea;
+    top: 300px;
+    width: 180px;
+    height: 60px;
+}
+
+#mainContainer #dateTab #chooseDate {
+    margin: 3px;
+}
+
+#mainContainer #dateTab #chooseDate .innerChooseDate {
+    width: 194px;
+    height: 18px;
+    line-height: 18px;
+}
+
+#mainContainer #dateTab #chooseDate .innerChooseDate .upperText {
+    display: inline-block;
+    color: #505050;
+    width: 70px;
+    height: 18px;
+    font-size: 16px;
+    line-height: 18px;
+    user-select: none;
+    font-weight: bold;
+}
+
+#mainContainer #dateTab #chooseDate .innerChooseDate .textInput {
+    display: inline-block;
+    width: 90px;
+    height: 16px;
+    margin: 0px 5px;
+    color: #505050;
+    background: white;
+    border-color: #eaeaea;
+    font-weight: bold;
+}
+
+#mainContainer #dateTab #chooseDate .innerChooseDate #chooseDayInput {
+    height: 18px;
+    width: 91px;
+    font-weight: normal;
+}
+
+#mainContainer #dateTab #chooseDate .innerChooseDate #chooseMonthInput {
+    height: 18px;
+    width: 91px;
+    font-weight: normal;
+}
+
+#mainContainer #dateTab #chooseDate .innerChooseDate #chooseYearInput {
+    height: 18px;
+    width: 91px;
+    font-weight: normal;
+}
+
+/* Styling Bottom Part */
+#mainContainer #bottomContainer {
+    position: relative;
+    top: 50px;
+    width: 960px;
+    background: none;
+    margin: 0 auto;
+}
+
+#mainContainer #bottomContainer #bottomIncomePart {
+    margin: 0px 45px 0px 10px;
+    float: left;
+    margin-bottom: 100px;
+}
+
+#mainContainer #bottomContainer #bottomExpensesPart {
+    margin: 0px 10px 0px 45px;
+    float: right;
+    margin-bottom: 100px;
+}
+
+#mainContainer #bottomContainer .bottomParting {
+    width: 425px;
+    height: 50px;
+    font-size: 30px;
+    display: inline-block;
+    font-weight: normal;
+    line-height: 50px;
+    background: none;
+}
+
+#mainContainer #bottomContainer #bottomIncomePart #incomeText {
+    color: #358c5a;
+}
+
+#mainContainer #bottomContainer #bottomExpensesPart #expensesText {
+    color: #963749;
+}
+
+/* End */
+
+@keyframes moveFunctionIncome {
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(-30px);
+    }
+}
+
+@keyframes moveFunctionIncomeBack {
+    0% {
+        transform: translate(-30px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+/* Styling Income List Member */
+#mainContainer #bottomContainer #bottomIncomePart  #incomeList .incomeListElement {
+    display: block;
+    width: 425px;
+    height: 40px;
+    background-color: none;
+    border-bottom: solid 1px #a7a7a7;
+}
+
+#mainContainer #bottomContainer #bottomIncomePart  #incomeList .incomeListElement:hover {
+    background-color: #eaeaea;
+}
+
+#mainContainer #bottomContainer #bottomIncomePart  #incomeList #incomeListElement0 {
+    border-top: solid 1px #a7a7a7;
+}
+
+#mainContainer #bottomContainer #bottomIncomePart  #incomeList .incomeListElement .incomeListElementDescription {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #494949;
+}
+
+#mainContainer #bottomContainer #bottomIncomePart  #incomeList .incomeListElement .incomeListElementValue {
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    padding: 0px 5px;
+    font-size: 16px;
+    line-height: 40px;
+    float: right;
+    color: #358c5a;
+    font-weight: bold;
+    background-color: white;
+}
+
+#mainContainer #bottomContainer #bottomIncomePart  #incomeList .incomeListElement .incomeCross {
+    width: 16px;
+    padding: 12px;
+    float: right;
+}
+
+#mainContainer #bottomContainer #bottomIncomePart  #incomeList .incomeListElement:hover .incomeListElementValue {
+    animation-name: moveFunctionIncome;
+    animation-duration: 0.3s;
+    transform: translate(-30px);
+    background-color: #eaeaea;
+}
+
+/* After Hover */
+
+.incomeListElementAfterHover .incomeListElementValue,
+.incomeListElementAfterHover .incomePercentageShow {
+    animation-name: moveFunctionIncomeBack;
+    animation-duration: 0.3s;
+    transform: translate(0px);
+}
+
+/* End Of After Hover */
+
+#mainContainer #bottomContainer #bottomIncomePart  #incomeList .incomeListElement .incomeCross:hover {
+    cursor: pointer;
+    width: 18px;
+    padding: 11px;
+}
+
+#mainContainer #bottomContainer #bottomIncomePart  #incomeList .incomeListElement .incomeCross:active {
+    cursor: default;
+    width: 14px;
+    padding: 13px;
+}
+
+/* End Of Style */
+
+@keyframes moveFunctionExpenses {
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(-35px);
+    }
+}
+
+@keyframes moveFunctionExpensesBack {
+    0% {
+        transform: translate(-35px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+/* Styling Expenses List Member */
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement {
+    display: block;
+    width: 425px;
+    height: 40px;
+    background-color: none;
+    border-bottom: solid 1px #a7a7a7;
+}
+
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement:hover {
+    background-color: #eaeaea;
+}
+
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList #expensesListElement0 {
+    border-top: solid 1px #a7a7a7;
+}
+
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement .expensesListElementDescription {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #494949;
+}
+
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement .expensesListElementValue {
+    display: inline-block;
+    position: relative;
+    left: 35px;
+    padding: 0px 5px;
+    font-size: 16px;
+    line-height: 40px;
+    float: right;
+    color: #963749;
+    font-weight: bold;
+}
+
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement .expensesPercentageShow {
+    display: inline-block;
+    position: relative;
+    left: 35px;
+    width: 50px;
+    height: 20px;
+    float: right;
+    background: #bb4667;
+    margin: 10px 0px;
+    line-height: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-weight: lighter;
+    border-radius: 2px;
+}
+
+/* Hover */
+
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement:hover .expensesPercentageShow,
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement:hover .expensesListElementValue {
+    animation-name: moveFunctionExpenses;
+    animation-duration: 0.35s;
+    transform: translate(-35px);
+}
+
+/* After Hover */
+
+.expensesListElementAfterHover .expensesListElementValue,
+.expensesListElementAfterHover .expensesPercentageShow {
+    animation-name: moveFunctionExpensesBack;
+    animation-duration: 0.35s;
+    transform: translate(0px);
+}
+
+/* After Hover */
+
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement .expensesCross {
+    width: 16px;
+    padding: 12px;
+    float: right;
+}
+
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement .expensesCross:hover {
+    cursor: pointer;
+    width: 18px;
+    padding: 11px;
+}
+
+#mainContainer #bottomContainer #bottomExpensesPart  #expensesList .expensesListElement .expensesCross:active {
+    cursor: default;
+    width: 14px;
+    padding: 13px;
+}

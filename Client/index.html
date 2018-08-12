@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Budget App</title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+        <link rel="icon" href="Pics/Logo/Logo.png">
+    </head>
+    
+    <body>
+        <div id="mainContainer">
+            <div id="upperContainer">
+                
+                <div id='authenticatePart'>
+                </div>
+                
+                <div id='userData'>
+                </div>
+                
+                <div id="firstPart">
+                    <h1 id="availableText">AVAILABLE BUDGET IN <span id="dateTime">February 2018</span></h1>
+                    <h1 id="availableAmount">+ 5,000.00</h1>
+                </div>
+                
+                <div id="secondPart">
+                    <div id="upperIncome">
+                        <p class="upperText" id="income">INCOME</p>
+                        <p class="numberValue" id="incomeUpperAmount">+ 5000.00</p>
+                    </div>
+                    <div id="upperExpenses">
+                        <p class="upperText" id="expenses">EXPENSES</p>
+                        <p class="numberValue" id="expensesUpperAmount">+ 5000.00</p>
+                        <p id="upperPercentage">100%</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="middleContainer">
+                <div id="contain">
+                    <select name="plusMinusChoice" id="plusMinusChoice" class="inputType inputTypeGreen">
+                        <option id="plusChoice" value="+">+</option>
+                        <option id="minusChoice" value="-">-</option>
+                    </select>
+                    <input type="text" placeholder="Description" id="description" class="inputType inputTypeGreen">
+                    <input type="number" placeholder="Value" id="numberValue" class="inputType inputTypeGreen">
+                    <img src="Pics/Icons/IncomeCheck.png" id="submitIcon">
+                </div>
+            </div>
+            
+            <div id='dateTab'>
+            </div>
+            
+            <div id="bottomContainer">
+                
+                <div id="bottomIncomePart">
+                    <div class="bottomParting" id="incomeText">INCOME</div>
+                    <div id="incomeList">
+                        <!-- <div class="incomeListElement" id="incomeListElement0">
+                            <div class="incomeListElementDescription" id="incomeListElementDescription0">Description</div>
+                            <img src="Pics/Icons/IncomeCross.png" class="incomeCross" id="incomeCross0">
+                            <div class="incomeListElementValue" id="listElementValue0">+ 5,000.00</div>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div id="bottomExpensesPart">
+                    <div class="bottomParting" id="expensesText">EXPENSES</div>
+                    <div id="expensesList">
+                        <!-- <div class="expensesListElement" id="expensesListElement0">
+                            <div class="expensesListElementDescription" id="expensesListElementDescription0">Description</div>
+                            <img src="Pics/Icons/ExpensesCross.png" class="expensesCross" id="expensesCross0">
+                            <div class="expensesPercentageShow" id="expensesPercentageShow0">100%</div>
+                            <div class="expensesListElementValue" id="expenseslistElementValue0">+ 5,000.00</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script type="text/javascript" src="Scripts/Script.js"></script>
+        <script type="text/javascript" src='Scripts/ULDR_Linear.js'></script>
+        <script type="text/javascript" src='Scripts/Helpers.js'></script>
+        <script type="text/javascript" src="Scripts/MouseHover.js"></script>
+        <script type="text/javascript" src="Scripts/ListObject.js"></script>
+        <script type="text/javascript" src='Scripts/ServerConnect.js'></script>
+        <script type="text/javascript" src='Scripts/Date.js'></script>
+        
+    </body>
+    
+</html>
