@@ -12,5 +12,10 @@
         "SALT": "youShallNotPass",
         "PASS_SALT_ROUNDS": 10,
         "TOKEN_SALT_ROUND": 1
+    },
+    "production": {
+        "SALT": "youShallNotPass",
+        "PASS_SALT_ROUNDS": 10,
+        "TOKEN_SALT_ROUND": 1
     }
 }

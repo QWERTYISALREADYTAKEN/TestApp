@@ -7,4 +7,11 @@ if (env === 'development' || env === 'test') {
     Object.keys(envConfig).forEach((current, i) => {
         process.env[current] = envConfig[current];
     })
+} else {
+    var config = require('./config.json');
+    var envConfig = config.production;
+    
+    Object.keys(envConfig).forEach((current, i) => {
+        process.env[current] = envConfig[current];
+    })
 };
