@@ -12,7 +12,7 @@ var connectServer = () => {
     }
     var twoTimesPrevent = true;
     var req = new XMLHttpRequest();
-    req.open('POST', "http://localhost:3000/login");
+    req.open('POST', "https://morning-reaches-27593.herokuapp.com/login");
     req.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     req.onreadystatechange = function() {
         if (this.readyState === 4) {
@@ -129,7 +129,7 @@ document.addEventListener('click', (event) => {
 //This Element Objects will store data - income/expenses, desciption, value
 var sendData = (data, url=`getData`) => {
     var req = new XMLHttpRequest();
-    req.open('POST', `http://localhost:3000/${url}`);
+    req.open('POST', `https://morning-reaches-27593.herokuapp.com/${url}`);
     req.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     req.setRequestHeader('x-auth', auth);
     req.send(JSON.stringify(data));
@@ -138,7 +138,7 @@ var sendData = (data, url=`getData`) => {
 var sendRemoveID = (id, type, url = `removeData`) => {
     var object = {id, type};
     var req = new XMLHttpRequest();
-    req.open('POST', `http://localhost:3000/${url}`);
+    req.open('POST', `https://morning-reaches-27593.herokuapp.com/${url}`);
     req.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     req.setRequestHeader('x-auth', auth);
     req.send(JSON.stringify(object));
@@ -147,7 +147,7 @@ var sendRemoveID = (id, type, url = `removeData`) => {
 var sendUpdateData = (data, url = `updateUserData`) => {
     var req = new XMLHttpRequest();
     var twoTimesPrevent = false;
-    req.open('POST', `http://localhost:3000/${url}`);
+    req.open('POST', `https://morning-reaches-27593.herokuapp.com/${url}`);
     req.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     req.setRequestHeader('x-auth', auth);
     req.onreadystatechange = function() {
@@ -181,7 +181,7 @@ var sendUpdateData = (data, url = `updateUserData`) => {
 var sendRegisterData = (data, url = `register`) => {
     var req = new XMLHttpRequest();
     var twoTimesPrevent = false;
-    req.open('POST', `http://localhost:3000/${url}`);
+    req.open('POST', `https://morning-reaches-27593.herokuapp.com/${url}`);
     req.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     req.setRequestHeader('x-auth', auth);
     req.onreadystatechange = function() {
@@ -222,7 +222,7 @@ var sendRegisterData = (data, url = `register`) => {
 var sendLogoutRequest = (url = `logout`) => {
     var req = new XMLHttpRequest();
     var twoTimesPrevent = false;
-    req.open('POST', `http://localhost:3000/${url}`);
+    req.open('POST', `https://morning-reaches-27593.herokuapp.com/${url}`);
     req.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     req.setRequestHeader('x-auth', auth);
     req.onreadystatechange = function() {
@@ -283,7 +283,7 @@ var sendforgotPassRequest = (url = `forgotPass`) => {
     object.userName = document.getElementById('userName').value;
     var req = new XMLHttpRequest();
     var twoTimesPrevent = false;
-    req.open('POST', `http://localhost:3000/${url}`);
+    req.open('POST', `https://morning-reaches-27593.herokuapp.com/${url}`);
     req.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     req.setRequestHeader('x-auth', auth);
     req.onreadystatechange = function() {
